@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 8px;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+}
+.margen-interno{
+    padding: 1px;
+    font-size: 11px;
+}
+.logo a:hover{
+    color: #343434;
+}
+
+.padre{
+  background: white;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.header{
+    background: url(./images/fondo.png);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.menu{
+    background: rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100px;
+    align-items: center;
+    border-bottom: 1px solid rgba(240,240,239,0.6);
+}
+.logo{
+   
+    flex: 1 1 auto;  
+
+}
+
+.logo a{
+    color: wheat;
+    font-size: 30px;
+   
+}
+
+
+.nav{
+   
+   flex: 8 1 auto;
+   /* flex-flow: row nowrap; */
+ 
+}
+
+.nav a{
+    font-size: 11px;
+    text-transform: uppercase;
+    color: whitesmoke;
+    padding: 0 7px;
+    letter-spacing: 2px;
+}
+
+.nav a:hover{
+    color: #464646;
+    font-size: 12px;
+}
+.redes-sociales{
+    
+    flex: 1 1 auto;
+    display: flex;
+  
+
+}
+.redes-sociales a .fa-facebook{
+    font-size: 18px;
+    color: #3b5998;
+    padding: 0 7px;
+}
+
+.redes-sociales a .fa-twitter{
+    font-size: 18px;
+    color: #00acee;
+    padding: 0 5px;
+}
+
+.redes-sociales a .fa-instagram{
+    font-size: 18px;
+    color: #E1306C;
+    padding: 0 5px;
+}
+
+.redes-sociales a .fa-whatsapp{
+    font-size: 18px;
+    color: #25d366;
+    padding: 0 5px;
+}
+
+
+.titulo-principal{
+    /* background: violet; */
+    height: 580px;
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: whitesmoke;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 21px;
+
+}
+
+
+.section{
+    background: #f8f8f8;
+    display: flex;
+}
+
+.articulos{
+    background: #f7f7f7;
+    display: flex;
+    flex: 2 1 auto;
+    flex-flow:row wrap;
+}
+h3{
+    font-size: 13px;
+    padding: 10px 0;
+    color: #fff;
+    margin-top: -80px;
+    margin-left: 13px;
+}
+h2{
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 0px 0 10px 15px;
+    color: wheat;
+}
+
+.articles{
+   font-size: 13px;
+   color: #666;
+   flex: 1 1 41%;
+   letter-spacing: 1px;
+   margin: 10px 10px 0 0px;
+   flex: 1 1 45%;
+   background: #ececec;
+}
+.articles img{
+    width: 100%;
+}
+
+.articles a{
+    background: #111;
+    color: whitesmoke;
+    margin: 10px 0;
+    padding: 10px ;
+    font-size: 13px;
+    display: inline-block;
+}
+
+.articles a:hover{
+    background: #546cc3;
+}
+
+
+
+.aside{
+    /* background: rgb(197, 90, 106); */
+    flex:1 1 auto;
+    margin: 10px 5px 10px 0;
+  
+}
+
+
+.publicidad img{
+    width: 100%;
+    height: 50%;
+    
+}
+h4{
+    background: #112;
+    text-transform: uppercase;
+    padding: 10px;
+    color: #ffe;
+}
+.publicidad{
+    /* background: yellowgreen; */
+}
+
+.footer{
+    
+    display: flex;
+    justify-content: center;
+}
+
+.pie{
+    
+    width: 300px;
+}
+
+@media all and (max-width:1120px){
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+      .aside{
+          display: flex;
+          justify-content: center;
+      }
+
+      .titulo-principal{
+          height: 200px;
+          margin-top: 20px;
+      }
+      .titulo-principal span{
+          color: red;
+          letter-spacing: 0.1px;
+          font-size: 24px;
+      }
+
+      .section{
+          flex-direction: column;
+      }
+      h1{
+          font-size: 15px;
+        
+      }
+
+      .publicidad{
+          flex: 1 1 45%;
+      }
+}
+ 
+ @media all and (max-width: 762px){
+
+     .articulos{
+         flex-direction: column;
+     }
+     .redes-sociales {
+         display: none;
+     }
+ }
+
+ @media all and (max-width:720px){
+      .off{display: none;}
+      .nav a{
+          font-size: 20px;
+          letter-spacing: 1px;
+          
+      }
+       .nav {
+           flex: 1 1 auto;
+           padding: 0px;
+       }
+      .redes-sociales {
+          display: none;
+      }
+
+      .titulo-principal{
+        height: 200px;
+        margin-top: 100px;
+    }
+    .logo a{
+        color: tomato;
+    }
+   .footer .pie span {
+       color: rgb(185, 18, 88);
+    }
+      
+ } 
+
+@media all and (max-width:400px){
+    .aside{
+        flex-direction: column;
+    }
+    .publicidad img {
+        width: 100%;
+    }
+}
